@@ -4,7 +4,7 @@ import Navbar from './Navbar';
 class MoreDetails extends Component {
   render() {
     return (
-      <div className = 'MoreDetails'>
+      <div className = 'moreDetails'>
       <Navbar />
       <h1>Details on the recipe you wanted</h1>
       <div className = 'moreDetailsPicAndTitle'>
@@ -13,7 +13,7 @@ class MoreDetails extends Component {
       </div>
 
       <div className = 'yeildDiv'>
-        <h3>Yeild</h3>
+        <h3>Yeild:</h3>
         <p className = 'yeildPara'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dapibus nulla vitae lectus consectetur venenatis. Ut ut placerat magna. Phasellus aliquam tristique lectus in blandit. Sed leo lacus, consequat a consequat vitae, suscipit vitae est. Quisque at tincidunt tellus, a tincidunt urna. In ut nisi tortor. Fusce auctor sem sem. Mauris ac arcu id lectus porttitor interdum at vitae augue. Nunc elementum convallis diam ut auctor. Maecenas sit amet commodo velit, nec mollis urna. Suspendisse potenti. Etiam velit lacus, venenatis ut dui vel, porta scelerisque orci.</p>
       </div>
 
@@ -24,7 +24,7 @@ class MoreDetails extends Component {
        
         
       <div className = 'prepDiv'>
-        <h3>Prep instructions</h3>
+        <h3>Preparation instructions</h3>
         <p className = 'prepPara'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dapibus nulla vitae lectus consectetur venenatis. Ut ut placerat magna. Phasellus aliquam tristique lectus in blandit. Sed leo lacus, consequat a consequat vitae, suscipit vitae est. Quisque at tincidunt tellus, a tincidunt urna. In ut nisi tortor. Fusce auctor sem sem. Mauris ac arcu id lectus porttitor interdum at vitae augue. Nunc elementum convallis diam ut auctor. Maecenas sit amet commodo velit, nec mollis urna. Suspendisse potenti. Etiam velit lacus, venenatis ut dui vel, porta scelerisque orci.</p>
       </div>   
     </div>
