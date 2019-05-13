@@ -1,13 +1,20 @@
 import React from 'react';
+import Home from './components/Home';
 import AboutUs from './components/AboutUs';
-import Carousel from './components/ImgCarousel';
+import { BrowserRouter as Router, Route} from 'react-router-dom';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Carousel />
-      <AboutUs />
+      <Router>
+        <Route exact path="/" component={
+          () => (<Home />)
+        } />
+        <Route path="/aboutus" component={
+          () => (<AboutUs />)
+        } />
+      </Router>
     </div>
   );
 }
