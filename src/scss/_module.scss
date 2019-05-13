@@ -9,22 +9,47 @@
     width: 40%;
   }
 
-
    .paoloPara, .jenPara, .sudipPara, .williamsPara{
     width: 400px;
     margin-bottom: 20px;
     margin-top: 20px;
-
   }
 
-  
   .ourImage {
     width: 400px;
     height: 400px;
     border-radius: 200px;
   }
-
 }
 
 
+//CSS for more details page:
+.moreDetails{
+  width: 80%;
+  margin: 0 auto;
+  h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  .moreDetailsPicAndTitle{
+    width: 100%;
 
+      .moreDetailsPic{
+        width: 50%;
+        margin-bottom: 10px;
+        border-radius: 100px;
+      }
+      h3{
+        font-size: 200%;
+        margin-bottom: 20px;
+      }
+    }
+    .yeildDiv, .ingredientsDiv, .prepDiv{
+      text-align: left;
+      margin-bottom: 10px;
+      h3{
+        font-size: 200%;
+      }
+    }
+
+  }
