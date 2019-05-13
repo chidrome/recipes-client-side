@@ -7,7 +7,7 @@ export default class ImgCarousel extends Component {
     render() {
         return (
             <div className="carousel-slider">
-                <Carousel autoPlay>
+                <Carousel autoPlay infiniteLoop>
                     <div>
                         <img src="https://placekitten.com/200/300" className="carousel-img" alt="" />
                         {/* <p className="legend">Legend 1</p> */}
