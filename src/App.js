@@ -1,4 +1,6 @@
 import React from 'react';
+import '../src/scss/core.scss';
+
 import AboutUs from './components/AboutUs'
 import './App.css';
 
