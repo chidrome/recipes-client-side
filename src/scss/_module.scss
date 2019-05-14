@@ -1,16 +1,18 @@
+
+//CSS for about us
 .aboutUsDiv{
   display: flex;
-  width: 1000px;
+  width: 80%;
   flex-flow: row wrap;
   justify-content: space-around;
   margin: 0 auto;
 
   .aboutPaulo .aboutJen .aboutWilliams .aboutSudip{
-    width: 40%;
+    width: 50%;
   }
 
    .paoloPara, .jenPara, .sudipPara, .williamsPara{
-    width: 400px;
+    width: 500px;
     margin-bottom: 20px;
     margin-top: 20px;
   }
@@ -53,3 +55,29 @@
     }
 
   }
+
+  //CSS for nav bar:
+
+.nav-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  background: gainsboro;
+  padding: 5px;
+  margin-bottom: 20px;
+  border: groove black;
+  border-radius: 100px;
+
+  #nav-mobile{
+    display: flex;
+    flex-direction: row;
+    font-size: 200%;
+      .menuItem{
+        margin-right: 20px;
+        margin-left: 20px;
+      }
+    }
+  }
+
