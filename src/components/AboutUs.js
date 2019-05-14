@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import williams from './usImages/williams.jpg';
 import sudip from './usImages/pic08.png'
 import Navbar from './Navbar';
+import FooterTitle from './FooterTitle'
 
 class AboutUs extends Component {
   render() {
@@ -29,9 +30,9 @@ class AboutUs extends Component {
         <section className = 'aboutSudip'>
           <img className = 'ourImage' src={sudip} alt={`Sudip`}/>
             <p className = 'sudipPara'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dapibus nulla vitae lectus consectetur venenatis. Ut ut placerat magna. Phasellus aliquam tristique lectus in blandit. Sed leo lacus, consequat a consequat vitae, suscipit vitae est. Quisque at tincidunt tellus, a tincidunt urna. In ut nisi tortor. Fusce auctor sem sem. Mauris ac arcu id lectus porttitor interdum at vitae augue. Nunc elementum convallis diam ut auctor. Maecenas sit amet commodo velit, nec mollis urna. Suspendisse potenti. Etiam velit lacus, venenatis ut dui vel, porta scelerisque orci.</p>
-        </section>
-        
+        </section>        
       </div>
+        <FooterTitle/>
       </div>
     )
   }
