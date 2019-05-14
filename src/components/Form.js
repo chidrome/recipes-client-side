@@ -29,10 +29,11 @@ export default class Form extends Component {
     //     })
     //     .catch(error=>{ console.log(`You're shit done messed up!`, error)})
     // }
-    superagent.get(`${SERVER_URL}/searchlabel/:health`)
+    superagent.get(`${SERVER_URL}/search`)
     .query({ health: this.state.label })
     .then((results) => {
       console.log(results.body)
+      this.props.handleFormRecipe(results.body);
     })
     .catch(error=>{ console.log(`You're shit done messed up!`, error)})
   }
@@ -58,6 +59,3 @@ export default class Form extends Component {
 
 
 
-
-
-//Dropdown referenced from https://www.npmjs.com/package/react-dropdown
