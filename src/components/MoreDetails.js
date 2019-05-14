@@ -10,7 +10,7 @@ class MoreDetails extends Component {
       <h1 className = 'detailsTitle'>Details on the recipe you wanted</h1>
       <div className = 'moreDetailsPicAndTitle'>
         <img className = 'moreDetailsPic' src={this.props.recipeInfo} alt={`momo`}/>
-        <h1>Title: {this.props.recipeInfo}</h1>
+        <h1 className = 'yourTitle'>Title: {this.props.recipeInfo}</h1>
       </div>
 
       <div className = 'yeildDiv'>
@@ -19,13 +19,13 @@ class MoreDetails extends Component {
       </div>
 
       <div className = 'ingredientsDiv'>
-        <h3 resultTitle>Ingredients</h3>
+        <h3 className = 'resultTitle'>Ingredients</h3>
         <p className = 'ingredientsPara'>{this.props.recipeInfo}</p>
       </div>
        
         
       <div className = 'prepDiv'>
-        <h3 resultTitle>Health Labels</h3>
+        <h3 className = 'resultTitle'>Health Labels</h3>
         <p className = 'prepPara'>{this.props.recipeInfo}</p>
       </div>   
       <FooterTitle/>
