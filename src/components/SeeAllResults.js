@@ -3,7 +3,7 @@ import ResultCards from './ResultCards';
 
 export default class SeeAllResults extends Component {
   render() {
-    const allRecipes = this.props.receipes.map((recipe, i)=> {
+    const allRecipes = this.props.recipes.map((recipe, i)=> {
       return(
         <ResultCards
           key={i}
