@@ -28,7 +28,7 @@ export default class Home extends Component {
       <div className = 'homepageContainer'>
         <Navbar />
         <Carousel />
-        <Form recipe = {this.handleFormRecipe} />
+        <Form handleFormRecipe = {this.handleFormRecipe} />
         <SeeAllResults recipes = {this.state.recipe}/>
       </div>
      
