@@ -3,7 +3,7 @@ import Select from 'react-select';
 import SERVER_URL from '../constant/server';
 import superagent from 'superagent';
 
-const options = [{value:'vegan', label:'vegan'}, {value:'vegetarian', label:'vegetarian'}, {value:'keto', label:'keto'}]
+const options = [{value:'vegan', label:'vegan'}, {value:'Vegetarian', label:'Vegetarian'}, {value:'keto', label:'keto'}]
 // , 'dairy-free', 'low-sugar', 'low-fat-abs', 'sugar-conscious', 'fat free', 'gluten free', 'wheat free']
 
 export default class Form extends Component {
@@ -30,7 +30,7 @@ export default class Form extends Component {
     //     .catch(error=>{ console.log(`You're shit done messed up!`, error)})
     // }
     superagent.get(`${SERVER_URL}/search`)
-    .query({ health: this.state.label })
+    .query({ health: this.state.label, q: this.state.query })
     .then((results) => {
       console.log(results.body)
       this.props.handleFormRecipe(results.body);
