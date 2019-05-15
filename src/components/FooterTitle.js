@@ -17,6 +17,7 @@ export default class FooterTitle extends Component {
         <div className = 'footerLinksDiv'>
           <ul className = 'linkedin'>
             <p>Contributors:</p>
+            <div className = 'ourNameList'>
             <a href = 'https://www.linkedin.com/in/paolo-chidrome/'>
             <li>Paolo Chidrome</li>
             </a>
@@ -32,6 +33,7 @@ export default class FooterTitle extends Component {
             <a href = 'https://www.linkedin.com/in/sudip-adhikari07/'>
             <li>Sudip Adhikari</li>
             </a>
+            </div>
           </ul>
           
 

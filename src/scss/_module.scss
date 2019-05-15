@@ -251,3 +251,13 @@ form{
 .allResults div img{
   max-width: 80%;
 }
+
+.linkedin{
+  a{
+    font: $p_cursive;
+    font-size: $font_medium;
+    line-height: 0;
+  }
+  .ourNameList{
+    margin-top: -10px;}
+  }
