@@ -109,7 +109,6 @@
     }
   }
 
-
   //CSS for home page
   .App {
     text-align: center;
@@ -232,4 +231,23 @@ form{
 
 .miniResult a {
   margin: $gutter_std * 2 auto;
+}
+
+//CSS for all results page
+
+.allResults {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.allResults div {
+  padding: $gutter_std / 2 $gutter_std /2;
+  width: 20%;
+}
+
+.allResults div img{
+  max-width: 80%;
 }
