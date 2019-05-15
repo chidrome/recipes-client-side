@@ -8,7 +8,8 @@ export default class MiniResults extends Component {
       return <ResultCards recipe={item} key = {i}/>
     })
     return (
-        <div>
+
+        <div className='miniResult'>
           {FiveResults}
           {FiveResults.length>0 ?(
             <Link to="/allResults">See All Results</Link>

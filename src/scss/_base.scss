@@ -1,3 +1,51 @@
 body{
   background: antiquewhite;
+  font-family: $p_cursive;
+  font-size: $font_medium;
 }
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: $dark_green;
+}
+
+h2 {
+  font-family: $h2_cursive;
+  font-size: $font_big;
+  padding: $gutter_std / 4 $gutter_std;
+}
+
+p {
+  font-family: $p_basic;
+  font-size: $font_medium;
+  padding: $gutter_std / 2 $gutter_std / 2;
+}
+
+input, button {
+  font-family: $p_cursive;
+  font-size: $font_medium;
+}
+
+a {
+  font-family: $p_basic;
+  font-size: $font_big;
+}
+
+button {
+  background-color: $dark_green;
+  color: $white;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: $aqua;
+  color: $black;
+}
+

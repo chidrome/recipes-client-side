@@ -1,0 +1,15 @@
+
+@media screen and (max-width: 750px) {
+  p {
+      font-size: $min_font_size;
+  }
+
+  h2 {
+      font-size: $min_h2_size;
+  }
+
+}
+
+p, select, input, button, a {
+  padding: $gutter_std / 2 $gutter_std / 2;
+}
