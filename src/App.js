@@ -12,7 +12,8 @@ export default class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      recipe: []
+      recipe: [],
+      recipeClicked: {}
     };
   }
 
@@ -22,22 +23,28 @@ export default class App extends Component {
      })
   }
 
+  handleClickMoreDetails = (results) => {
+    this.setState({ 
+      recipeClicked: results
+     })
+  }
+
   
   render() {
     return (
       <div className="App">
         <Router>
           <Route exact path="/" component={
-            () => (<Home handleFormRecipe = {this.handleFormRecipe} recipe = {this.state.recipe} />)
+            () => (<Home handleClickMoreDetails = {this.handleClickMoreDetails} handleFormRecipe = {this.handleFormRecipe} recipe = {this.state.recipe} />)
           } />
           <Route path="/aboutus" component={
             () => (<AboutUs />)
           } />
           <Route path="/moreDetails" component={
-            () => (<MoreDetails />)
+            () => (<MoreDetails recipe = {this.state.recipeClicked}/>)
           } />
           <Route path="/allResults" component={
-              () => (<SeeAllResults recipes = {this.state.recipe}/>)
+              () => (<SeeAllResults handleClickMoreDetails = {this.handleClickMoreDetails}  recipes = {this.state.recipe}/>)
             } />
         </Router>
       </div>

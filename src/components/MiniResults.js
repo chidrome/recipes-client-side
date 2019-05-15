@@ -3,9 +3,10 @@ import ResultCards from './ResultCards';
 import { Link} from 'react-router-dom';
 
 export default class MiniResults extends Component {
+
   render() {
     const FiveResults = this.props.recipe.slice(0,5).map((item, i) => {
-      return <ResultCards recipe={item} key = {i}/>
+      return <ResultCards handleClickMoreDetails = {this.props.handleClickMoreDetails} recipe={item} key = {i}/>
     })
     return (
 

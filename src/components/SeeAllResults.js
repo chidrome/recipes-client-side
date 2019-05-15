@@ -9,7 +9,7 @@ export default class SeeAllResults extends Component {
     if(this.props.recipes.length > 0){
       const allRecipes = this.props.recipes.map((recipe, i)=> {
         return(
-          <ResultCards
+          <ResultCards handleClickMoreDetails = {this.props.handleClickMoreDetails}
             key={i}
             recipe={recipe}
           />

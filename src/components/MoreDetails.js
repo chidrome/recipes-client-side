@@ -9,24 +9,24 @@ class MoreDetails extends Component {
       <Navbar />
       <h1 className = 'detailsTitle'>Details on the recipe you wanted</h1>
       <div className = 'moreDetailsPicAndTitle'>
-        <img className = 'moreDetailsPic' src={this.props.recipeInfo} alt={`momo`}/>
-        <h1 className = 'yourTitle'>Title: {this.props.recipeInfo}</h1>
+        <img className = 'moreDetailsPic' src={this.props.recipe.image} alt={`momo`}/>
+        <h1 className = 'yourTitle'>Title: {this.props.recipe.label}</h1>
       </div>
 
       <div className = 'yeildDiv'>
-        <h3 className = 'resultTitle'>Yeild:</h3>
-        <p className = 'yeildPara'>{this.props.recipeInfo}</p>
+        <h3 className = 'resultTitle'>Yield:</h3>
+        <p className = 'yeildPara'>{this.props.recipe.yield}</p>
       </div>
 
       <div className = 'ingredientsDiv'>
         <h3 className = 'resultTitle'>Ingredients</h3>
-        <p className = 'ingredientsPara'>{this.props.recipeInfo}</p>
+        <p className = 'ingredientsPara'>{this.props.recipe.ingredients}</p>
       </div>
        
         
       <div className = 'prepDiv'>
         <h3 className = 'resultTitle'>Health Labels</h3>
-        <p className = 'prepPara'>{this.props.recipeInfo}</p>
+        <p className = 'prepPara'>{this.props.recipe.healthLabels}</p>
       </div>   
       <FooterTitle/>
     </div>

@@ -13,7 +13,7 @@ export default class Home extends Component {
         <Navbar />
         <Carousel />
         <Form handleFormRecipe = {this.props.handleFormRecipe} />
-        <MiniResults recipe = {this.props.recipe} />
+        <MiniResults handleClickMoreDetails = {this.props.handleClickMoreDetails} recipe = {this.props.recipe} />
       </div>
      
       <FooterTitle/>
