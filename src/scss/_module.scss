@@ -233,3 +233,14 @@ form{
 .miniResult a {
   margin: $gutter_std * 2 auto;
 }
+
+
+.linkedin{
+  a{
+    font: $p_cursive;
+    font-size: $font_medium;
+    line-height: 0;
+  }
+  .ourNameList{
+    margin-top: -10px;}
+  }
