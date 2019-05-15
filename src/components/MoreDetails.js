@@ -3,6 +3,7 @@ import Navbar from './Navbar';
 import FooterTitle from './FooterTitle'
 
 class MoreDetails extends Component {
+  
   render() {
     return (
       <div className = 'moreDetails'>
