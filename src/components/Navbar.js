@@ -1,4 +1,6 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default class Navbar extends Component {
   render() {
@@ -6,11 +8,10 @@ export default class Navbar extends Component {
       <div>
         <nav className="navbar">
           <div className="nav-wrapper">
-            <a href="/"><img src='http://chittagongit.com/images/home-logo-icon/home-logo-icon-0.jpg' className="Home-Logo" alt="logo" /></a>
+            <a href="/"><FontAwesomeIcon className = 'homeIcon' icon={faHome} /></a>
             <ul id="nav-mobile" className="right hide-on-med-and-down">
-              <li className = 'menuItem'><a href="/aboutus">About Us</a></li>
-              <li className = 'menuItem'><a href="/moreDetails">More Details</a></li>
               <li className = 'menuItem'><a href="/">Home</a></li>
+              <li className = 'menuItem'><a href="/aboutus">About Us</a></li>
             </ul>
           </div>
         </nav>

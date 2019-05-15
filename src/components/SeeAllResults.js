@@ -18,7 +18,9 @@ export default class SeeAllResults extends Component {
       return (
         <div>
           <Navbar />
+          <div className= "allResults">
           {allRecipes}
+          </div>
           <FooterTitle />
         </div>
       )
