@@ -1,3 +1,20 @@
 body{
   background: antiquewhite;
 }
+
+h2 {
+  font-family: $h2_cursive;
+  font-size: $font_big;
+}
+
+p {
+  font-family: $p_basic;
+  font-size: $font_medium;
+}
+
+
+select, input, button {
+  font-family: $p_cursive;
+  font-size: $font_medium;
+}
+
