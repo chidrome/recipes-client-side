@@ -7,6 +7,7 @@ export default class ResultCards extends Component {
       <div>
         <img src={this.props.recipe.image} alt=""/>
         <h1>{this.props.recipe.label}</h1>
+        <button className = 'menuItem'><a href="/moreDetails">More Details</a></button>
         {/* Insert code for the more details link. For some reason I can't think of the logic for it this early in the morning. */}
         {/* <a href="/moreDetails"><MoreDetails recipeInfo={this.props.recipe} /></a> */}
       </div>
