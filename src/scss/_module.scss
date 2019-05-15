@@ -172,8 +172,8 @@ form{
   width: 50%;
   justify-content: left;
   .inputAndButton{
-    width: 45%;
-    min-width: 120px;
+    // width: 65%;
+    min-width: 40%;
     display: flex;
     flex-direction: row;
     border: solid black;
@@ -181,12 +181,12 @@ form{
     background-color: azure;
     padding: 15px;
     .searchBox{
-      width: 40%;
-      margin-right: 50px;
+      min-width: 40%;
+      margin-right: 5%;
       background-color: white;
     }
     .submitButton{
-      width: 40%;
+      min-width: 40%;
     }
   } 
 }
@@ -216,7 +216,7 @@ form{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  border: 2px inset;
+  outline: 2px solid grey;
   background-color: white;
 }
 .miniResult div {
