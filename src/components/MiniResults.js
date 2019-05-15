@@ -3,16 +3,19 @@ import ResultCards from './ResultCards';
 
 export default class MiniResults extends Component {
   render() {
-    const FiveResults = () => {
-      const recipeArray = this.props.recipes;
-      for(let i = 0; i < 6; i++){
-        return <ResultCards recipe={recipeArray[i]} />
-      }
-    }
+   const FiveResults = this.props.recipe.slice(0,5).map((item, i) => {
+    return <ResultCards recipe={item} key = {i}/>
+   })
     return (
       <div>
         {FiveResults}
+        {FiveResults.length>0 ?(
+         <a href="/allResults">
+        <button>See all results</button>
+        </a>
+        ) :''}
       </div>
+      
     )
   }
 }

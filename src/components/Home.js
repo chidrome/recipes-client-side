@@ -3,7 +3,8 @@ import Carousel from './ImgCarousel';
 import Navbar from './Navbar';
 import FooterTitle from './FooterTitle'
 import Form from './Form'
-import SeeAllResults from './SeeAllResults';
+// import SeeAllResults from './SeeAllResults';
+import MiniResults from './MiniResults';
 
 export default class Home extends Component {
   constructor(props){
@@ -29,7 +30,8 @@ export default class Home extends Component {
         <Navbar />
         <Carousel />
         <Form handleFormRecipe = {this.handleFormRecipe} />
-        <SeeAllResults recipes = {this.state.recipe}/>
+        {/* <SeeAllResults recipes = {this.state.recipe}/> */}
+        <MiniResults recipe = {this.state.recipe}/>
       </div>
      
       <FooterTitle/>

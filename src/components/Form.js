@@ -45,7 +45,7 @@ export default class Form extends Component {
       <div className = 'searcher'>
         <form className = 'inputForm' onSubmit={this.handleSubmit}>
           <div className = 'dropDown'>
-            <Select options={options} value={selectedOption} onChange={this.handleSelectChange} defaultValue="Keto" />
+            <Select className = 'selectOptions' options={options} value={selectedOption} onChange={this.handleSelectChange} defaultValue="Keto" />
           </div>
           <div className = 'inputAndButton'>
             <input className = 'searchBox' type = 'text' placeholder = 'search' onChange={this.handleInputChange} ></input>
