@@ -21,21 +21,13 @@ export default class Form extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault()
-    // if(this.state.query !== ''){
-    //   superagent.get(`${SERVER_URL}/searchlabelinput/:q/:health`)
-    //     .query({ q: this.state.query, health: this.state.label })
-    //     .then((results) => {
-    //       console.log(results)
-    //     })
-    //     .catch(error=>{ console.log(`You're shit done messed up!`, error)})
-    // }
     superagent.get(`${SERVER_URL}/search`)
     .query({ health: this.state.label, q: this.state.query })
     .then((results) => {
       console.log(results.body)
       this.props.handleFormRecipe(results.body);
     })
-    .catch(error=>{ console.log(`You're shit done messed up!`, error)})
+    .catch(error=>{ console.log(`Your shit done messed up!`, error)})
   }
 
 
