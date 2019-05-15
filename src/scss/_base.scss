@@ -38,13 +38,13 @@ a {
   font-size: $font_big;
 }
 
-button {
+.inputAndButton button {
   background-color: $dark_green;
   color: $white;
   border-radius: 5px;
 }
 
-button:hover {
+.inputAndButton button:hover {
   background-color: $aqua;
   color: $black;
 }
