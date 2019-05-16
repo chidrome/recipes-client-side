@@ -36,14 +36,16 @@ class Login extends Component {
       return (<Redirect to="/profile" />);
     }
     return(
-        <div>
+        <div className='loginDiv'>
           <h2>Login as an existing user</h2>
-          <form onSubmit={this.handleSubmit}>
+          <form className = 'loginForm' onSubmit={this.handleSubmit}>
             <div>
+             <label><b>Email Address</b></label>
               <input name="Email" placeholder="What is your email?" value={this.state.email} onChange={this.handleEmailChange} />
             </div>
             <div>
-              <input name="Password" type="password" value={this.state.password} onChange={this.handlePasswordChange} />
+            <label><b>Password</b></label>
+              <input name="Password" type="password" placeholder="What is your password?" value={this.state.password} onChange={this.handlePasswordChange} />
             </div>
             <input type="submit" value="Log Me In!" className="button" />
           </form>
