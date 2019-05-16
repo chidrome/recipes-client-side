@@ -15,7 +15,7 @@ export default class MiniResults extends Component {
 
         <div className='miniResult'>
           {FiveResults}
-          {FiveResults?(
+          {FiveResults.length > 0?(
             <Link to="/allResults">See All Results</Link>
           ) : ''}
         </div>
