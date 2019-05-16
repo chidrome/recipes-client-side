@@ -19,11 +19,11 @@ class Signup extends Component {
 
   handlePasswordChange = (e) => { this.setState({ password: e.target.value }); }
 
-  handleSubmit = (e) => {
+  handleSubmit = async (e) => {
     e.preventDefault();
     console.log('In submit fnc, state is', this.state);
     // SEND DATA TO SERVER
-    axios.post(`${SERVER_URL}/auth/signup`, this.state)
+    await axios.post(`${SERVER_URL}/auth/signup`, this.state)
     .then(response => {
       console.log('SUCCESS', response);
       // Assume we have a token that we should save to LS
@@ -38,7 +38,7 @@ class Signup extends Component {
 
   render() {
     if(this.props.user){
-      return (<Redirect to="/profile" />);
+      return (<Redirect push to="/profile" />);
     }
     return(
         <div>
