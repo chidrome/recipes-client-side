@@ -6,10 +6,10 @@ class MoreDetails extends Component {
   render() {
     return (
       <div className = 'moreDetails'>
-      <h1 className = 'detailsTitle'>Details on the recipe you wanted</h1>
+      <h1 className = 'detailsTitle'>Here are the details on {this.props.recipe.label}</h1>
       <div className = 'moreDetailsPicAndTitle'>
-        <img className = 'moreDetailsPic' src={this.props.recipe.image} alt={`momo`}/>
-        <h1 className = 'yourTitle'>Title: {this.props.recipe.label}</h1>
+        <img className = 'moreDetailsPic' src={this.props.recipe.image} alt={``}/>
+        <h1 className = 'yourTitle'>{this.props.recipe.label}</h1>
       </div>
 
       <div className = 'yeildDiv'>

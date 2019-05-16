@@ -72,7 +72,7 @@
   #nav-mobile{
     display: flex;
     flex-direction: row;
-    font-size: 200%;
+    font-size: 150%;
       .menuItem{
         margin-right: 20px;
         margin-left: 20px;
@@ -250,6 +250,12 @@ form{
 
 .allResults div img{
   max-width: 80%;
+}
+
+.allResultsContainer{
+  h1{
+    font-size: 150%;
+  }
 }
 
 .linkedin{

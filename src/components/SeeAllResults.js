@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ResultCards from './ResultCards';
 import FooterTitle from './FooterTitle';
-import Navbar from './Navbar';
+// import Navbar from './Navbar';
 
 export default class SeeAllResults extends Component {
   render() {
@@ -14,8 +14,9 @@ export default class SeeAllResults extends Component {
         )
       })
       return (
-        <div>
-          <Navbar />
+        <div className = 'allResultsContainer'>
+          <h1>All results</h1>
+          {/* <Navbar /> */}
           <div className= "allResults">
           {allRecipes}
           </div>
