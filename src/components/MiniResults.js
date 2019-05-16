@@ -22,7 +22,7 @@ export default class MiniResults extends Component {
 
         <div className='miniResult'>
           {FiveResults}
-          {this.state.results ? (<Link to="/allResults">See All Results</Link>) : <p>There are no results for your search.</p>}
+          {this.state.results ? (<Link to="/allResults">See All Results</Link>) : ''}
         </div>
       
     )
