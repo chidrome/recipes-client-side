@@ -96,8 +96,8 @@ export default class App extends Component {
           <Route path="/allResults" component={
               () => (<SeeAllResults handleClickMoreDetails = {this.handleClickMoreDetails}  recipes = {this.state.recipe}/>)
             } />
-          <FooterTitle/>
         </Router>
+        <FooterTitle/>
       </div>
     );
   }
