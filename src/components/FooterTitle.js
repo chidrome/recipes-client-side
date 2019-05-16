@@ -41,16 +41,16 @@ export default class FooterTitle extends Component {
             <p>Thanks to:</p>
             <li>Code Fellows</li>
             <li>Michelle</li>
-            <li>Amazon web services</li>
+            <li>Amazon Web Services</li>
             <li>Apprenti</li>
           </ul>
 
           <ul className = 'references'>
             <p>References:</p>
             <li>Edaman API</li>
-            <li>Something</li>
-            <li>Something</li>
-            <li>Something</li>
+            <li>Stack Overflow</li>
+            <li>Postgres Documentation</li>
+            <li>MDN</li>
           </ul>
 
         </div>
