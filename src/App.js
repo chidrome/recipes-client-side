@@ -72,7 +72,7 @@ export default class App extends Component {
   render() {
     return (
       <div className="App">
-      <HeaderTitle/>
+      <HeaderTitle />
         <Router>
           <Navbar user={this.state.user} updateUser={this.getUser} />
           <Route exact path="/" component={

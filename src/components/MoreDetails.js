@@ -44,6 +44,10 @@ class MoreDetails extends Component {
         <h3 className = 'resultTitle'>Health Labels</h3>
         <ul className = 'prepPara'>{allHealthLabels}</ul>
       </div> 
+
+      <div>
+        <a href={this.props.recipe.url}>Prep Directions</a>
+      </div>
       <Link to="/allResults">See All Results</Link>  
     </div>
     )
