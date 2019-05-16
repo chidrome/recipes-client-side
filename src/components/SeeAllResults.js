@@ -20,7 +20,6 @@ export default class SeeAllResults extends Component {
           <div className= "allResults">
           {allRecipes}
           </div>
-          <FooterTitle />
         </div>
       )
   }
