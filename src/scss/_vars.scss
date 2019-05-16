@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Atma|Fredericka+the+Great|Love+Ya+Like+A+Sister|News+Cycle');
+@import url('https://fonts.googleapis.com/css?family=Atma|Fredericka+the+Great|Love+Ya+Like+A+Sister|News+Cycle|Dosis');
 
 $gutter_std: 1vw;
 
 /******* font style and size ***********/
 $base_font: helvetica, arial;
 $h2_cursive: 'Fredericka the Great', cursive, $base_font;
-$p_cursive: 'Atma', cursive, $base_font;
+//$p_cursive: 'Atma', cursive, $base_font;
+$p_cursive: 'Dosis', sans-serif, $base_font;
 $p_basic: 'News Cycle', sans-serif, $base_font;
 $font_big: $gutter_std * 3;
 $font_medium: $gutter_std * 1.5;
