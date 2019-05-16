@@ -5,8 +5,6 @@ import Navbar from './Navbar';
 
 export default class SeeAllResults extends Component {
   render() {
-    console.log(this.props.recipes);
-    if(this.props.recipes.length > 0){
       const allRecipes = this.props.recipes.map((recipe, i)=> {
         return(
           <ResultCards handleClickMoreDetails = {this.props.handleClickMoreDetails}
@@ -24,12 +22,5 @@ export default class SeeAllResults extends Component {
           <FooterTitle />
         </div>
       )
-    } else {
-      return (
-        <div>
-          <h1>Hi</h1>
-        </div>
-      )
-    }
   }
 }
