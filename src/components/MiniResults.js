@@ -3,12 +3,6 @@ import ResultCards from './ResultCards';
 import { Link} from 'react-router-dom';
 
 export default class MiniResults extends Component {
-  constructor(props){
-    super(props);
-    this.state = {
-      results: false
-    }
-  }
 
   render() {
     let FiveResults;
