@@ -27,7 +27,8 @@ class Login extends Component {
       this.props.updateUser();
     })
     .catch(err => {
-      console.log(`TODO: Make error messages for the user to see`, err.response.data);
+
+      console.log(`Error logging in.`, err);
     });
   }
 
