@@ -16,6 +16,10 @@ a:visited {
   color: $dark_green;
 }
 
+h1 {
+  font-family: $h2_cursive;
+}
+
 h2 {
   font-family: $h2_cursive;
   font-size: $font_big;
@@ -31,6 +35,8 @@ p {
 input, button {
   font-family: $p_cursive;
   font-size: $font_medium;
+  margin: $gutter_std $gutter_std;
+  padding: $gutter_std / 3 $gutter_std / 3;
 }
 
 a {

@@ -5,7 +5,7 @@
   }
 
   h2 {
-      font-size: $min_h2_size;
+    font-size: $min_h2_size;
   }
 
 }
@@ -23,7 +23,7 @@ p, select, input, button, a {
   font-stretch: expanded;
   
   h1{
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: $h2_cursive;
   font-size: 200%;
   }
 }
