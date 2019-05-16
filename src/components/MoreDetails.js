@@ -1,13 +1,11 @@
 import React, { Component } from 'react'
-import Navbar from './Navbar';
-import FooterTitle from './FooterTitle'
+
 
 class MoreDetails extends Component {
   
   render() {
     return (
       <div className = 'moreDetails'>
-      <Navbar />
       <h1 className = 'detailsTitle'>Details on the recipe you wanted</h1>
       <div className = 'moreDetailsPicAndTitle'>
         <img className = 'moreDetailsPic' src={this.props.recipe.image} alt={`momo`}/>
@@ -29,7 +27,6 @@ class MoreDetails extends Component {
         <h3 className = 'resultTitle'>Health Labels</h3>
         <p className = 'prepPara'>{this.props.recipe.healthLabels}</p>
       </div>   
-      <FooterTitle/>
     </div>
     )
   }
