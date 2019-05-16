@@ -12,7 +12,7 @@ export default class Home extends Component {
         <Carousel />
         <Form handleFormRecipe = {this.props.handleFormRecipe} />
         <MiniResults handleClickMoreDetails = {this.props.handleClickMoreDetails} recipe = {this.props.recipe} />
-        {this.props.recipe.length===0? (
+        {this.props.recipe? (
         <div>
         <p>Are you ready to take your diet to next level?</p>
         <p>Search the food you like and let us worry about getting the details about the food for you.</p>
