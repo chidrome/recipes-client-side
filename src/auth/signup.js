@@ -41,17 +41,20 @@ class Signup extends Component {
       return (<Redirect push to="/profile" />);
     }
     return(
-        <div>
+        <div className = 'signupDiv'>
           <h2>Signup as a new user</h2>
-          <form onSubmit={this.handleSubmit}>
+          <form className = 'signupForm' onSubmit={this.handleSubmit}>
             <div>
-              <input name="Name" placeholder="Name" value={this.state.name} onChange={this.handleNameChange} />
+            <label><b>Name</b></label>
+              <input name="Name" placeholder="What is your name" value={this.state.name} onChange={this.handleNameChange} />
             </div>
             <div>
-              <input name="Email" placeholder="Email" value={this.state.email} onChange={this.handleEmailChange} />
+            <label><b>Email Address</b></label>
+              <input name="Email" placeholder="What is your email" value={this.state.email} onChange={this.handleEmailChange} />
             </div>
             <div>
-              <input name="Password" type="Password" placeholder="password" value={this.state.password} onChange={this.handlePasswordChange} />
+            <label><b>Password</b></label>
+              <input name="Password" type="Password" placeholder="What is your password" value={this.state.password} onChange={this.handlePasswordChange} />
             </div>
             <input type="submit" value="Sign Me Up!" className="button" />
           </form>
