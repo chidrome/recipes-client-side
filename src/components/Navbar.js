@@ -23,7 +23,7 @@ export default class Navbar extends Component {
                 <li className = 'menuItem'><Link to="/">Home</Link></li>
                 <li className = 'menuItem'><Link to="/aboutus">About Us</Link></li>
                 <li className = 'menuItem'><Link to="/profile">Profile</Link></li>
-                <li><button className="logout-button" onClick={this.handleLogout}><Link to="/">Logout</Link></button></li>
+                <li className = 'logoutItem'><button className="logout-button" onClick={this.handleLogout}><Link to="/">Logout</Link></button></li>
                 
               </ul>
             </div>
