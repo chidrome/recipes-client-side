@@ -37,23 +37,31 @@
     width: 100%;
 
       .moreDetailsPic{
-        width: 50%;
+        width: 30%;
         margin-bottom: 10px;
         border-radius: 100px;
       }
     }
     .yeildDiv, .ingredientsDiv, .prepDiv{
-      text-align: left;
+      text-align: center;
       margin-bottom: 10px;
+      margin-top: 10px;
       h3{
         font-size: 200%;
       }
     }
-
   }
   .yourTitle{
     font-size: 200%;
   }
+
+  .yieldIngredientsPrep{
+
+    margin: 0px auto;
+    align-items: center;
+    justify-content: center;
+  }
+
 
   //CSS for nav bar:
 

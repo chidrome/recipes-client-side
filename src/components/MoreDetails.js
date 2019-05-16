@@ -13,22 +13,23 @@ class MoreDetails extends Component {
         <img className = 'moreDetailsPic' src={this.props.recipe.image} alt={`momo`}/>
         <h1 className = 'yourTitle'>Title: {this.props.recipe.label}</h1>
       </div>
+      <hr></hr>
+      <div className = 'yieldIngredientsPrep'>
+        <div className = 'yeildDiv'>
+          <h3 className = 'resultTitle'>Yield:</h3>
+          <p className = 'yeildPara'>{this.props.recipe.yield}</p>
+        </div>
 
-      <div className = 'yeildDiv'>
-        <h3 className = 'resultTitle'>Yield:</h3>
-        <p className = 'yeildPara'>{this.props.recipe.yield}</p>
+        <div className = 'ingredientsDiv'>
+          <h3 className = 'resultTitle'>Ingredients</h3>
+          <p className = 'ingredientsPara'>{this.props.recipe.ingredients}</p>
+        </div>
+          
+        <div className = 'prepDiv'>
+          <h3 className = 'resultTitle'>Health Labels</h3>
+          <p className = 'prepPara'>{this.props.recipe.healthLabels}</p>
+        </div>   
       </div>
-
-      <div className = 'ingredientsDiv'>
-        <h3 className = 'resultTitle'>Ingredients</h3>
-        <p className = 'ingredientsPara'>{this.props.recipe.ingredients}</p>
-      </div>
-       
-        
-      <div className = 'prepDiv'>
-        <h3 className = 'resultTitle'>Health Labels</h3>
-        <p className = 'prepPara'>{this.props.recipe.healthLabels}</p>
-      </div>   
       <FooterTitle/>
     </div>
     )
