@@ -26,10 +26,11 @@ class MoreDetails extends Component {
       <div className = 'prepDiv'>
         <h3 className = 'resultTitle'>Health Labels</h3>
         <p className = 'prepPara'>{this.props.recipe.healthLabels}</p>
-      </div>   
+      </div> 
+      <Link to="/allResults">See All Results</Link>  
     </div>
     )
   }
 }
 
-export default MoreDetails
+export default MoreDetails;
