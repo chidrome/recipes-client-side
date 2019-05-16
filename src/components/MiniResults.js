@@ -24,7 +24,6 @@ export default class MiniResults extends Component {
           {FiveResults}
           {this.state.results ? (<Link to="/allResults">See All Results</Link>) : ''}
         </div>
-      
     )
   }
 }
