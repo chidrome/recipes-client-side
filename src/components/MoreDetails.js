@@ -13,6 +13,7 @@ class MoreDetails extends Component {
         <h1 className = 'yourTitle'>{this.props.recipe.label}</h1>
       </div>
 
+      <hr></hr>
       <div className = 'yeildDiv'>
         <h3 className = 'resultTitle'>Yield:</h3>
         <p className = 'yeildPara'>{this.props.recipe.yield}</p>
