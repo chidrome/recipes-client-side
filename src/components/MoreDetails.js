@@ -3,8 +3,23 @@ import { Link } from 'react-router-dom';
 
 
 class MoreDetails extends Component {
-  
   render() {
+    let allIngredients = this.props.recipe.ingredients;
+    if(this.props.recipe.ingredients) {
+      allIngredients = this.props.recipe.ingredients.map((ingredient, i) => {
+        return (
+          <li key={i}>{ingredient}</li>
+        )
+      })
+    }
+    let allHealthLabels = this.props.recipe.healthLabels;
+    if(this.props.recipe.healthLabels) {
+      allHealthLabels = this.props.recipe.healthLabels.map((label, i) => {
+        return (
+          <li key={i}>{label}</li>
+        )
+      })
+    }
     return (
       <div className = 'moreDetails'>
       <h1 className = 'detailsTitle'>Here are the details on {this.props.recipe.label}</h1>
@@ -20,13 +35,13 @@ class MoreDetails extends Component {
 
       <div className = 'ingredientsDiv'>
         <h3 className = 'resultTitle'>Ingredients</h3>
-        <p className = 'ingredientsPara'>{this.props.recipe.ingredients}</p>
+        <ul className = 'ingredientsPara'>{allIngredients}</ul>
       </div>
        
         
       <div className = 'prepDiv'>
         <h3 className = 'resultTitle'>Health Labels</h3>
-        <p className = 'prepPara'>{this.props.recipe.healthLabels}</p>
+        <ul className = 'prepPara'>{allHealthLabels}</ul>
       </div> 
       <Link to="/allResults">See All Results</Link>  
     </div>

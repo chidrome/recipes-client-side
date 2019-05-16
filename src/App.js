@@ -91,7 +91,7 @@ export default class App extends Component {
               () => (<Profile user={this.state.user} updateUser={this.getuser} />)
             } />
           <Route path="/moreDetails" component={
-            () => (<MoreDetails recipe = {this.state.recipeClicked}/>)
+            () => (<MoreDetails recipe = {this.state.recipeClicked} />)
           } />
           <Route path="/allResults" component={
               () => (<SeeAllResults handleClickMoreDetails = {this.handleClickMoreDetails}  recipes = {this.state.recipe}/>)
