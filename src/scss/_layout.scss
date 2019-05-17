@@ -13,17 +13,3 @@
 p, select, input, button, a {
   padding: $gutter_std / 2 $gutter_std / 2;
 }
-
-.header{
-  width: 100%;
-  color: aliceblue;
-  background: rgb(92, 110, 105);
-  margin-bottom: 10px;
-  padding: 15px;
-  font-stretch: expanded;
-  
-  h1{
-  font-family: $h2_cursive;
-  font-size: 200%;
-  }
-}
