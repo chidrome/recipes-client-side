@@ -10,7 +10,7 @@ export default class Home extends Component {
     if(this.props.recipe) {
       introPrompt = this.props.recipe.length === 0? (
       <div>
-      <p>Are you ready to take your diet to next level?<br />
+      <p className = 'homePlaceHolder'>Are you ready to take your diet to next level?<br />
       Search the food you like and let us worry about getting the details about the food for you.<br />
       You care about your health, and so do we.<br />
       Your healthy diet is just one click away from you.</p>
