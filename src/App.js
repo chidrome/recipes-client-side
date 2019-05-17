@@ -12,7 +12,6 @@ import Profile from './components/Profile';
 import Signup from './auth/signup';
 import Navbar from './components/Navbar';
 import FooterTitle from './components/FooterTitle';
-import HeaderTitle from './components/HeaderTitle';
 
 
 export default class App extends Component {
@@ -72,7 +71,6 @@ export default class App extends Component {
   render() {
     return (
       <div className="App">
-      <HeaderTitle />
         <Router>
           <Navbar user={this.state.user} updateUser={this.getUser} />
           <Route exact path="/" component={
