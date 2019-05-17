@@ -19,7 +19,7 @@ export default class Navbar extends Component {
           <nav className="navbar">
             <div className="nav-wrapper">
               <ul id="nav-mobile" className="right hide-on-med-and-down">
-              <Link to="/"><FontAwesomeIcon className = 'homeIcon' icon={faHome} /></Link>
+              <li><a href="/"><FontAwesomeIcon className = 'homeIcon' icon={faHome} /></a></li>
                 <li className = 'menuItem'><Link to="/">Home</Link></li>
                 <p>Know Your Diet</p>
                 <li className = 'menuItem'><Link to="/aboutus">About Us</Link></li>
