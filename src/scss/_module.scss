@@ -180,8 +180,7 @@ form{
   width: 50%;
   justify-content: left;
   .inputAndButton{
-    // width: 65%;
-    min-width: 40%;
+    min-width: 60%;
     display: flex;
     flex-direction: row;
     border: solid black;
@@ -200,8 +199,7 @@ form{
 }
 
 .dropDown{
-    width: 25%;
-    min-width: 120px;
+    min-width: 25%;
     border: solid black;
     border-radius: 100px;
     background-color: azure;
@@ -209,14 +207,12 @@ form{
     margin-right: 20px;
   }
 
-.selectOptions{
-  width: 80%;
-}
 
 .searcher {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: auto;
 }
 
 .miniResult {
@@ -240,6 +236,13 @@ form{
 
 .miniResult a {
   margin: $gutter_std * 2 auto;
+}
+
+.no-results {
+  margin: 20px auto;
+  color: red;
+  font-weight: 700;
+  font-size: 30px;
 }
 
 //CSS for all results page
@@ -288,6 +291,11 @@ form{
       font-size: 20px;
     }
     
+  }
+
+  .see-all-link {
+    margin-bottom: 10px;
+    margin-top: 10px;
   }
 
   //css for the login page
@@ -358,6 +366,7 @@ form{
   width: 10vw;
   height: 5vw;
   padding: 0;
+  margin: -20px;
   border: none;
   background: none;
 }

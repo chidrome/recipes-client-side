@@ -48,7 +48,10 @@ class MoreDetails extends Component {
       <div>
         <a href={this.props.recipe.url}>Prep Directions</a>
       </div>
-      <Link to="/allResults">See All Results</Link>  
+      <div className="see-all-link">
+        <Link to="/allResults">See All Results</Link>  
+      </div>
+      
     </div>
     )
   }

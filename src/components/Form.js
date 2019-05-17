@@ -37,10 +37,10 @@ export default class Form extends Component {
       <div className = 'searcher'>
         <form className = 'inputForm' onSubmit={this.handleSubmit}>
           <div className = 'dropDown'>
-            <Select className = 'selectOptions' options={options} value={selectedOption} onChange={this.handleSelectChange} defaultValue="Keto" />
+            <Select className = 'selectOptions' options={options} value={selectedOption} placeholder='Health Label' onChange={this.handleSelectChange} />
           </div>
           <div className = 'inputAndButton'>
-            <input className = 'searchBox' type = 'text' placeholder = 'search' onChange={this.handleInputChange} ></input>
+            <input className = 'searchBox' type = 'text' placeholder ='Search By Ingredient' onChange={this.handleInputChange} ></input>
             <button className = 'submitButton'>Submit</button>
           </div>
         </form>      
