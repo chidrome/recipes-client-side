@@ -34,12 +34,10 @@ export default class App extends Component {
     let token = localStorage.getItem('serverToken');
     // IF THERE IS, TRY TO GET USER INFO
     if(token){
-      console.log('Found token in LS', token);
       axios.post(`${SERVER_URL}/auth/current/user`, {
         headers: { 'Authorization': `Bearer ${token}` }
       })
       .then(response => {
-        console.log('Success!');
         this.setState({
           user: response.data.user
         });

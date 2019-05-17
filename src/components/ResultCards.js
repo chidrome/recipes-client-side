@@ -8,7 +8,6 @@ export default class ResultCards extends Component {
 
   resultClickHandler = (e) => {
     e.preventDefault();
-    console.log('recipe', this.props.recipe);
     this.props.handleClickMoreDetails(this.props.recipe); 
   }
 

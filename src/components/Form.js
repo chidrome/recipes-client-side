@@ -24,10 +24,9 @@ export default class Form extends Component {
     superagent.get(`${SERVER_URL}/search`)
     .query({ health: this.state.label, q: this.state.query })
     .then((results) => {
-      console.log(results.body)
       this.props.handleFormRecipe(results.body);
     })
-    .catch(error=>{ console.log(`Your shit done messed up!`, error)})
+    .catch(error=>{ console.log(`Error handling request!`, error)})
   }
 
 

@@ -21,11 +21,9 @@ class Signup extends Component {
 
   handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('In submit fnc, state is', this.state);
     // SEND DATA TO SERVER
     await axios.post(`${SERVER_URL}/auth/signup`, this.state)
     .then(response => {
-      console.log('SUCCESS', response);
       // Assume we have a token that we should save to LS
       localStorage.setItem('serverToken', response.data.token);
       // Need to update... somehow
